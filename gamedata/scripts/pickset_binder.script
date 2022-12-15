@@ -1,0 +1,8 @@
+function try_split(obj)
+    return game.translate_string("st_pick_split")
+end
+
+function split_picks(obj)
+    alife_release_id(obj:id())
+    give_object_to_actor("lockpick",3)
+end

@@ -1,0 +1,31 @@
+This merges Warfare-alife overhaul and ZcP to be fully gamma compatible. 
+
+In this version, there's optimization updates, new zoning for mutants thanks to MonsterWorld mod. its not included and does not work, but i looked at some of their scripts and spawns and used a few for warfare. be careful.  
+
+Just untick "Limited fast travel rebalance" and "ZcP 1.4 balanced spawns"  
+
+YOU DO NOT NEED THE GAMMA WARFARE PATCH!! or any other warfare patch for that matter (at this time)
+
+just load this highest and use the new functions added by Vintar to control warfare spawns, and ZcP to fine tune them. 
+
+special loadouts included, load it above this. 
+
+Curse of immortality for gamma included. I will redux it later to fit better, but for now, it adds a really awesome dynamic. Makes hording important. 
+
+This MIGHT work on EFP and base anomaly, but i will not be providing support and neither will maid. 
+
+Grok does not support Warfare. I do. So dont bother him with issues when you load this. 
+go to my chat and one of us or myself will help. 
+
+No extra mods have been tested at this time, just base gamma. 
+
+Untick Cordon early game tweaks
+tick xenotech protect cordon base if you go loner. 
+
+
+
+
+
+Mo3killin aka TheMafioso. 
+
+Stay tuned for War Dogs Armory! a 12gb mod pack of weapons and EVERY related asset. supplied by the wonderful community, and patched together by yours truley for an easy drop in and play experience  

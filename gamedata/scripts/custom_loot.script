@@ -1,0 +1,40 @@
+--[[
+Integration point for other users to add custom loot into lootboxes.
+--]] 
+
+local ini_lootbox = arti_lootboxes.ini_lootbox
+local ini_pools = arti_lootboxes.ini_pools
+local ini_contents = arti_lootboxes.ini_contents
+pools_custom = arti_lootboxes.pools_custom
+contents_custom = arti_lootboxes.contents_custom
+
+-- add item pool to list of box's possible contents
+function add_pool_to_box(item_pool, box_contents, size, limit, chance)
+    if not ini_pools:section_exist(item_pool) then 
+        printf("Item pool %s does not exist", item_pool)
+        return 
+    end
+    if not ini_contents:section_exist(box_contents) then 
+        printf("Box loot pool %s does not exist", box_contents)
+        return end
+    if not contents_custom[box_contents] then contents_custom[box_contents] = {} end
+    local item_ref = {}
+    item_ref.section = item_pool
+    item_ref.size = size or 1
+    item_ref.limit = limit or 1
+    item_ref.chance = chance or 0.5
+    table.insert(contents_custom[box_contents], item_ref)
+end
+
+-- Add an item to an item pool
+function item_to_item_pool(item, pool, chance, quantity)
+    if not ini_pools:section_exist(pool) then 
+        printf("Item pool %s does not exist", pool)
+        return end
+    if not pools_custom[pool] then pools_custom[pool] = {} end
+    local ref = {}
+    ref.section = item
+    ref.amount = quantity or 1
+    ref.chance = chance or 0.5
+    table.insert(pools_custom[pool], ref)
+end

@@ -1,0 +1,48 @@
+
+--[[
+Reputation Editor
+28APR2022
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+Author: RavenAscendant
+--]]
+
+function on_mcm_load()
+    local options = {
+        id = "rax_rep_edit",
+        sh = false,
+		gr = {
+			{id = "about", sh = true,text = "ui_mcm_rax_rep_edit_about", gr ={
+				{id = "rax_rep_edit", type = "slide", link = "ui_options_slider_player", text = "ui_mcm_rax_rep_edit_about", size = {512, 50}, spacing = 20},
+				{ id= "desc_mcm"    	 	,type= "desc"     ,text= "ui_mcm_rax_rep_edit_about_text"			 }, 				
+			}}
+		}
+    }
+	t = {
+			{id = "rax_rep_edit", type = "slide", link = "ui_options_slider_player", text = "ui_mcm_rax_rep_edit_good_will", size = {512, 50}, spacing = 20, }			
+        }
+		for i=1, #game_relations.factions_table do
+			table.insert(t,  {id = game_relations.factions_table[i],hint = "rax_rep_edit_"..game_relations.factions_table[i], type = "input", val = 2, def = 0, curr = {relation_registry.community_goodwill,game_relations.factions_table[i], AC_ID}, functor = {relation_registry.set_community_goodwill, game_relations.factions_table[i],AC_ID}, min = -5000, max = 5000})
+		end
+		table.insert(options.gr,{id = "good_will", sh = true, gr = t, text = "ui_mcm_rax_rep_edit_good_will", precondition = {level.present}})
+		for j =1, #game_relations.factions_table do		
+			t = {
+				{id = "rax_rep_edit"..game_relations.factions_table[j], type = "slide", link = "ui_options_slider_player", text = "ui_mcm_rax_rep_edit_faction_faction", size = {512, 50}, spacing = 20},
+				{ id= "desc_mcm"    	 	,type= "desc"     ,text= "ui_mcm_rax_rep_edit_"..game_relations.factions_table[j],clr= {255, 200, 0, 0}			 }
+	        }
+			for i=1, #game_relations.factions_table do			
+				table.insert(t,  {id = game_relations.factions_table[i],hint = "rax_rep_edit_"..game_relations.factions_table[i], type = "input", val = 2, def = 0, curr = {relation_registry.community_relation,game_relations.factions_table[i], game_relations.factions_table[j]}, functor = {save_relation, game_relations.factions_table[i],game_relations.factions_table[j]}, min = -5000, max = 5000})			
+			end
+			table.insert(options.gr,{id = game_relations.factions_table[j], sh = true, gr = t, text = "ui_mcm_rax_rep_edit_"..game_relations.factions_table[j], precondition = {level.present}})
+		end
+    return options
+end
+
+function save_relation(faction_1 , faction_2 , relation)
+	game_relations.save_relation ( faction_1 , faction_2 , relation ) -- Save overall faction relations:
+	game_relations.save_relation ( "actor_" .. faction_1 , faction_2 , relation ) -- Save actor faction / faction 2 relations:
+	game_relations.save_relation ( faction_1 , "actor_" .. faction_2 , relation ) -- Save actor faction / faction 1 relations:
+
+
+
+
+end

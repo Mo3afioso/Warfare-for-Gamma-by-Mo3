@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+<string id="ui_mcm_menu_rax_rep_edit">
+	<text>Reputation Editor</text>
+</string>
+
+<string id="ui_mcm_rax_rep_edit_about">
+	<text>About</text>
+</string>
+
+
+<string id="ui_mcm_rax_rep_edit_about_text">
+	<text>This tool requires a game to be inprogress to work. You must click out of the text box (or hit return) before saving. The text nexto the box turns orange when ready to save.</text>
+</string>
+
+<string id="ui_mcm_rax_rep_edit_good_will">
+	<text>Player Goodwill</text>
+</string>
+
+<string id="ui_mcm_rax_rep_edit_faction_faction">
+	<text>Faction to Faction relation</text>
+</string>
+
+
+
+
+
+
+	<string id="ui_mcm_rax_rep_edit_stalker">
+				<text>Stalker</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_bandit">
+				<text>Bandits</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_csky">
+				<text>Clear Sky</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_army">
+				<text>Military</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_freedom">
+				<text>Freedom</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_dolg">
+				<text>Duty</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_ecolog">
+				<text>Ecologists</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_killer">
+				<text>Mercenaries</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_monolith">
+				<text>Monolith</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_renegade">
+				<text>Renegades</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_greh">
+				<text>Sin</text>
+			</string>
+			<string id="ui_mcm_rax_rep_edit_isg">
+				<text>UNISG</text>
+			</string>
+	
+
+</string_table>

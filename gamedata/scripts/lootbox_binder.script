@@ -1,0 +1,89 @@
+-- just to keep track of weights
+
+local weights = {}
+-- class
+function bind(obj)
+    obj:bind_object(lootbox_binder(obj))
+end
+
+class "lootbox_binder" (object_binder)
+
+function lootbox_binder:__init(obj) super(obj)
+	self.first_update = nil
+end
+
+function lootbox_binder:update(delta)
+    local obj  = self.object
+    local id = obj:id()
+    if not self.first_update then
+        self.first_update = true
+        arti_lootboxes.populate_lootbox(id, obj:section())
+        local weight = calc_weight(obj)
+        obj:set_weight(weight)
+        weights[id] = weight
+        obj:set_condition(0.98)
+    end
+end
+
+function lootbox_binder:reload(section)
+    object_binder.reload(self, section)
+end
+
+function lootbox_binder:reinit()
+    object_binder.reinit(self)
+end
+
+function lootbox_binder:net_spawn(se_abstract)
+    if not(object_binder.net_spawn(self, se_abstract)) then
+        return false
+    end
+    local id = self.object:id()
+    if weights[id] then
+        self.object:set_weight(weights[id])
+        self.object:set_condition(0.98)
+    end
+    return true
+end
+
+function lootbox_binder:net_destroy()
+	--print_dbg("[%s] destroyed: %s", self.object:name())
+	object_binder.net_destroy(self)
+end
+
+function lootbox_binder:save(stpk)
+end
+
+function lootbox_binder:load(stpk)
+end
+
+local function se_device_on_unregister(se_obj, typ)
+    local id = se_obj.id
+    weights[id] = nil
+
+end
+
+function calc_weight(box)
+    local lootstring = arti_lootboxes.get_loot_string(box:id())
+    local weight = SYS_GetParam(2, box:section(), "inv_weight")
+	local spawned_items = arti_lootboxes.parse_lootstring(lootstring)
+    for section, quantity in pairs(spawned_items) do
+        if section == "spooky" or section == "money" then
+        elseif arti_lootboxes.sec_is_weapon(section) then
+            item_weight = SYS_GetParam(2, section, "inv_weight") or 0
+            weight = weight + item_weight
+        elseif string.find(section, "itm_pda") then
+            weight = weight + SYS_GetParam(2, section, "inv_weight") or 0
+        else
+            if string.find(section, "__") then
+                section = str_explode(section, "__")[1]
+            end
+            item_weight = SYS_GetParam(2, section, "inv_weight") or 0
+            weight = weight + (item_weight * tonumber(quantity))
+        end
+    end
+    return weight
+end
+
+function on_game_start()
+	RegisterScriptCallback("server_entity_on_unregister",se_device_on_unregister)
+end

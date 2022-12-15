@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+	<string id="st_lootbox_small_bad">
+		<text>Padlocked Toolbox</text>
+	</string>
+	<string id="st_lootbox_small_bad_descr">
+		<text>
+            A medium sized toolbox secured with a simple padlock. Boxes of this nature are the most cost-efficient way to store a stalker's personal possessions, but the box offers little protection from the elements and is easy to force into. As a result, only the poorest stalkers will dare to leave anything valuable inside. The padlock is low-quality and can be bypassed with little effort.\n \n
+		</text>
+	</string>
+
+	<string id="st_lootbox_small_ok">
+		<text>Padlocked Steel Box</text>
+	</string>
+	<string id="st_lootbox_small_ok_descr">
+		<text>
+            Simple steel box with a padlock. Unlike toolboxes, this box is designed specifically to hold contents securely, and offers some degree of protection against tampering. These types of boxes are commonly used by stalkers to deter would-be thieves from looting their personal possessions. The padlock is of decent quality and shouldn't be too difficult to break into.\n \n
+		</text>
+	</string>
+
+	<string id="st_lootbox_small_good">
+		<text>Secured Container</text>
+	</string>
+	<string id="st_lootbox_small_good_descr">
+		<text>
+            Fancy-looking yellow hardshell container with an internal lock. The case is made from unknown composite materials and is designed to be resistant to mechanical tampering and the elements. Such boxes of this nature originate from outside Eastern Europe and are popular with foreigners and rich stalkers as the best means to safely store your items. The internal lock is very complex, but should be manageable to bypass.\n \n
+		</text>
+	</string>
+	<string id="st_lootbox_small_good2_descr">
+		<text>
+            Fancy-looking hardshell container with an internal lock. The case is made from unknown composite materials and is designed to be resistant to mechanical tampering and the elements. Such boxes of this nature originate from outside Eastern Europe and are popular with foreigners and rich stalkers as the best means to safely store your items. The internal lock is very complex, but should be manageable to bypass.\n \n
+		</text>
+	</string>
+
+	<string id="st_lootbox_small_artifact">
+		<text>Locked Lead-lined box</text>
+	</string>
+	<string id="st_lootbox_small_artifact_descr">
+		<text>
+            Professionally made lead-lined case with a built-in lock stamped with the symbol of the Ukrainian Ministry of Science. These cases are often used by Ecologists to transport artifacts through dangerous areas, and excel at keeping radiation inside while keeping moisture and would-be thieves outside. Even with hired guards, groups of Ecologists are often preyed upon for their collected artifacts and research data, and as such securing high-value information and artifacts in secure containers became standard practice. The internal lock is professionally made and very difficult to bypass.\n \n
+		</text>
+	</string>
+
+	<string id="st_lootbox_small_briefcase">
+		<text>Locked Briefcase</text>
+	</string>
+	<string id="st_lootbox_small_briefcase_descr">
+		<text>
+            Locked fireproof briefcase. Quite light and portable. Briefcases like these are commonly used by scientists and military members to transport sensitive documents, or criminal organizations to transport large amounts of paper money. As befitting a transport container of such sensitive items, the lock on this case is very secure.\n \n
+		</text>
+	</string>
+    
+	<string id="st_lootbox_survival">
+		<text>Survival Cache</text>
+	</string>
+	<string id="st_lootbox_survival_descr">
+		<text>
+			Locked weatherproof box containing a variety of useful field supplies. These specialized dead-drop style caches are used primarily by paramilitaries and covert task forces to resupply their agents in the field while maintaining a low operational profile. However, there are no identifying marks in either the outside of the box or the inside, so it is usually hard to distinguish if cases like these belong to spies or simply well-heeled stalkers. Due to the inherent danger of burying things in the irradiated soil of the Zone, these caches are well-hidden with a decent enough lock to discourage thieves. Cases such as these do not contain much particularly valuable, though food, meds and ammo are always welcome. \n \n
+		</text>
+	</string>
+
+	<string id="st_lootbox_large_shotgun">
+		<text>Old weapon crate</text>
+	</string>
+	<string id="st_lootbox_large_shotgun_descr">
+		<text>
+            Wooden case used by villagers to store weapons - hunting rifles, Great War surplus, etc. A handful of these were left behind in the Exclusion Zone's surrounding villages while others are simply reused crates found in the Zone by stalkers to hold their guns in a semi-dry environment. The wood is fairly old and rotting in some places, so it'd be trivial to break the lock off with an axe.\n \n
+		</text>
+	</string>
+	<string id="st_lootbox_large_surplus">
+		<text>Army weapon crate</text>
+	</string>
+	<string id="st_lootbox_large_surplus_descr">
+		<text>
+           Army crate with a padlock, commonly used to transport rifles and ordnance. After the failed initial attempts at probing the Exclusion Zone, a vast amount of equipment, including crates like these, were abandoned and left to the mercy of the Zone's conditions. It's a gamble to tell if these crates are either fresh imports from a few years ago or relics from the inception of the Zone - in addition, they're really heavy and usually not worth hauling around.\n \n
+		</text>
+	</string>
+	<string id="st_lootbox_large_rifle">
+		<text>Pelican Rifle case</text>
+	</string>
+	<string id="st_lootbox_large_rifle_descr">
+		<text>
+            Hard waterproof case often used to transport long rifles. The only people in the Zone who can afford to care for their shooters with such luxury are Mercenaries or other similarly dangerous people, so cases like these are very rare and extremely dangerous to possess.\n \n
+		</text>
+	</string>
+	<string id="st_lootbox_large_monolith">
+		<text>Monolith Cache</text>
+	</string>
+	<string id="st_lootbox_large_monolith_descr">
+		<text>
+            Heavy ornate box with the symbol of the Monolith embossed onto the lid. These boxes are purportedly brought into existence by the Wish Granter itself, and fulfill the wishes of the Monolith for gear and supplies. The lock is anomalously tampered with - some sort of gravitational anomaly keeps the pins held in place. Such a rare find, however, is likely to catch the eye of a trader or collector.\n \n
+		</text>
+	</string>
+    <string id="st_box_difficulty">
+        <text>Lock difficulty:</text>
+    </string>
+    <string id="st_lootbox_get">
+        <text>Found </text>
+    </string>
+    <string id="st_no_picks">
+        <text>No lockpicks available.</text>
+    </string>
+    <string id="st_cant_unlock">
+        <text>Insufficient lockpicks to open this box.</text>
+    </string>
+    <string id="st_cant_unlock_snapgun">
+        <text>Tool is unable to open this box.</text>
+    </string>
+    <string id="st_incompatible">
+        <text>Lock is too complex to open with tool.</text>
+    </string>
+
+    <string id="st_cant_unlock_coinbox">
+        <text>Tool doesn't fit into the slot.</text>
+    </string>
+    <string id="st_pick_condition">
+        <text>Pickset condition:</text>
+    </string>
+
+    <string id="st_tech_open">
+        <text>Cost to open</text>
+    </string>
+    <string id="st_tech_open_q">
+        <text>Break into the box?</text>
+    </string>
+    <string id="st_tech_open_fail">
+        <text>What the hell kind of box is this? \n There is no way I can open it.</text>
+    </string>
+    <string id="st_pick_split">
+        <text>separate picks </text>
+    </string>
+    <string id="st_loot_ammo">
+        <text>box of </text>
+    </string>
+    <string id="st_loot_ammos">
+        <text>boxes of </text>
+    </string>
+    <string id="st_weapon_3">
+        <text>a nice </text>
+    </string>
+    <string id="st_weapon_2">
+        <text>a decent </text>
+    </string>
+    <string id="st_weapon_1">
+        <text>a crappy </text>
+    </string>
+    <string id="st_weapon_0">
+        <text>a broken </text>
+    </string>
+
+    <string id="st_money">
+        <text> roubles</text>
+    </string>
+    <string id="st_check_peek">
+        <text>[DEBUG] peek</text>
+    </string>
+	
+	<string id="st_rip_axe">
+        <text>The axe has broken while smashing the box open.</text>
+    </string>
+
+	<string id="st_unlock_pick">
+        <text>pick lock</text>
+    </string>
+	<string id="st_unlock_snap">
+        <text>open with snapgun</text>
+    </string>
+
+	<string id="st_unlock_coin">
+        <text>insert coin?</text>
+    </string>
+
+	<string id="st_lockpick">
+		<text>Lockpick</text>
+	</string>
+	<string id="st_lockpick_descr">
+		<text>Individual lockpick. Rare and fragile thing that tends to break easily. Can be used to open locks on certain boxes, but they tend to break rather quickly. Multiple picks may be required to open certain types of boxes. \n \n 
+			To use, either drag and drop this item onto a locked box or right click the locked box. The maximum amount of picks that can be applied to any lock is ten. \n \n
+			%c[d_cyan] • %c[ui_gray_2] effective strength: 10%\n
+			%c[d_cyan] • %c[ui_gray_2] up to ten can be consumed\n
+			%c[d_cyan] • %c[ui_gray_2] breaks on use\n
+		</text>
+	</string>
+
+	<string id="st_lockpick_bundle">
+		<text>Lockpick bundle</text>
+	</string>
+	<string id="st_lockpick_bundle_descr">
+		<text>A bundle of three lockpicks. What a nice find!\n \n
+		</text>
+	</string>
+    
+	<string id="st_skelekey">
+		<text>Skeleton key</text>
+	</string>
+	<string id="st_skelekey_descr">
+		<text>A strange key that looks like it was exposed to an anomalous field. The blade is bent unnaturally, while the teeth glow ominously and look to be constantly changing shape and size.\n \n</text>
+	</string>
+	<string id="st_lockpick_set">
+		<text>Locksmith's tools</text>
+	</string>
+	<string id="st_lockpick_set_descr">
+		<text>Professionally assembled set of fine tools used by locksmiths. Someone has taken out all the lockpicks, unfortunately. Still, the torsion wrenches will beat screwdrivers when it comes to turning locks. \n \n
+			%c[d_cyan] • %c[ui_gray_2] reduces lock difficulty by 10%\n
+		</text>
+	</string>
+
+	<string id="st_snapgun">
+		<text>Snap Gun</text>
+	</string>
+	<string id="st_snapgun_descr">
+		<text>A specialized device used to quickly open locks. The snap gun operates by striking all the pins at once in a simple tumbler lock, quickly aligning them with the shear line and allowing the tumbler to rotate. The benefit of such a device is that it can defeat most simple locks with little effort and has a long operational lifetime, but is quite heavy and hopeless with any slightly more complicated lock.\n \n
+			%c[d_cyan] • %c[ui_gray_2] effective strength: 30%\n
+		</text>
+	</string>
+
+	<string id="st_spooky_1">
+		<text>OPEN THE BOX DAMMIT</text>
+	</string>
+	<string id="st_spooky_2">
+		<text>HEY OPEN THIS BOX</text>
+	</string>
+	<string id="st_spooky_3">
+		<text>HEY LET ME OUTTA HERE</text>
+	</string>
+	<string id="st_spooky_4">
+		<text>OPEN UP I HAVE VODKA</text>
+	</string>
+	<string id="st_spooky_free">
+		<text>HAHAHAHAHA I AM FREE</text>
+	</string>
+
+	
+	<string id="st_lootbox_docs_case">
+		<text>Metal Document Folder</text>
+	</string>
+	<string id="st_lootbox_docs_case_descr">
+		<text>
+			Slim, secured metal folder used to store documents. While the X-Labs were still operational, critical findings and other important information were locked in these document cases and shipped out. These document cases are now almost impossible to find in the Zone - anyone would pay out the nose to know the contents within. The lock on this case is biometric and not possible to open mechanically.
+		</text>
+	</string>
+
+	<string id="ui_mcm_menu_lootboxes">
+		<text>Lootboxes</text>	
+	</string>
+	<string id="ui_mcm_lootboxes_title">
+		<text>Lootboxes</text>
+	</string>
+	<string id="ui_mcm_lootboxes_stashchance">
+		<text>Chance to find lootboxes in stashes</text>
+	</string>
+	<string id="ui_mcm_lootboxes_deathchance">
+		<text>
+			Chance to find loot off dead stalkers (including lockpicks)
+		</text>
+	</string>
+	<string id="ui_mcm_lootboxes_lootquality">
+		<text>Loot quality</text>
+	</string>
+	<string id="ui_mcm_lootboxes_lootquality_desc">
+		<text>
+			Affects quality of lockboxes found and quality of loot in them by increasing chances to roll better pools.
+		</text>
+	</string>
+	
+	<string id="ui_mcm_lootboxes_animation">
+		<text>Box open animations</text>
+	</string>
+	<string id="ui_mcm_lootboxes_debug">
+		<text>Debug logging</text>
+	</string>
+ 
+
+	
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+
+</string_table>

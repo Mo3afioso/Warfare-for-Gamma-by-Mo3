@@ -1,0 +1,14 @@
+
+
+GetStatus = utils_item.get_item_trade_status
+function utils_item.get_item_trade_status(obj, profile)
+    local status = GetStatus(obj, profile)
+    local sec = obj:section()
+    local factions = SYS_GetParam(0, sec, "factions")
+    if profile_mode == 2 and factions then
+        return 3
+    else
+        return status
+    end
+
+end
