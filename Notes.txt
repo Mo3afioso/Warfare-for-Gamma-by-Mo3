@@ -24,6 +24,10 @@ tick xenotech protect cordon base if you go loner.
 
 
 
+You no longer need skills 2.0
+this no longer has lootboxes or hobo matches built in. 
+for the full effect of the overhaul, load this in with WarDogs. 
+this should be higher prio. check the modlist in the wardogs downloads. 
 
 
 Mo3killin aka TheMafioso. 

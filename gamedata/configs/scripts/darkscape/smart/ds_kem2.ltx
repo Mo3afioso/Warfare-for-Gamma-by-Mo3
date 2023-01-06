@@ -1,0 +1,17 @@
+[smart_terrain] ;;автозаправка
+squad_id = 7
+max_population = 2
+respawn_params = respawn@ds_kem2
+respawn_idle = 172800
+
+[respawn@ds_kem2]
+spawn_army@novice
+spawn_army@advanced
+
+[spawn_army@novice]
+spawn_squads = army_sim_squad_novice
+spawn_num = 2
+
+[spawn_army@advanced]
+spawn_squads = army_sim_squad_advanced
+spawn_num = 2

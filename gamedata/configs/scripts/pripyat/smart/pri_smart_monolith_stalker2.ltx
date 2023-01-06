@@ -1,0 +1,22 @@
+[smart_terrain]
+squad_id = 7
+max_population = 8
+respawn_params = respawn@pri_smart_monolith_stalker2
+respawn_idle = 43200
+
+[respawn@pri_smart_monolith_stalker2]
+spawn_monolith
+spawn_zombied
+spawn_monsters
+
+[spawn_monolith]
+spawn_squads = monolith_sim_squad_veteran, monolith_sim_squad_advanced
+spawn_num = 1
+
+[spawn_zombied]
+spawn_squads = zombied_sim_squad_advanced, zombied_sim_squad_veteran
+spawn_num = 1
+
+[spawn_monsters]
+spawn_squads = zombied_sim_squad_mix, simulation_zombie, simulation_mix_zombie, simulation_contr_4tush_3sn, simulation_dog, simulation_mix_dogs, simulation_pseudodog, simulation_contr_2sn_4zomb, simulation_cat, simulation_mix_boar_flesh, simulation_contr_4zomb_str, simulation_flesh, simulation_boar, simulation_contr_3dog_4tush, simulation_borya, simulation_snork, simulation_lurker, simulation_contr_3sn_3gzomb, simulation_bloodsucker, simulation_psysucker, simulation_karlik, simulation_contr_5dog, simulation_burer, simulation_fracture, simulation_contr_6gzomb, simulation_poltergeist, simulation_gigant, simulation_contr_5sn, simulation_zombie_3_6, simulation_chimera, simulation_controller, simulation_bibliotekar
+spawn_num = 1

@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+warlab_access_decoding} sr_timer %+warlab_start_teleport%
+
+[sr_timer]
+type = dec
+start_value = 30000
+on_value = 0 | sr_idle@check_death
+
+[sr_idle@check_death]
+on_info = {+warlab_stalker_monolith_1_killed +warlab_stalker_monolith_2_killed +warlab_stalker_monolith_3_killed +warlab_stalker_monolith_4_killed +warlab_stalker_monolith_5_killed +warlab_stalker_monolith_6_killed +warlab_stalker_monolith_7_killed +warlab_stalker_monolith_8_killed} sr_idle@scene1
+
+[sr_idle@scene1]
+on_timer = 8000 | sr_idle@oso_spawner %=enable_ui +warlab_finish_decoding%
+
+[sr_idle@oso_spawner]
+on_info = {+warlab_finish_decoding +warlab_door_opened +warlab_actor_teleported} sr_idle@nil %=create_squad(lab_greh_sabaoth_squad:warlab_common_consciousness_smart_terrain)%
+
+[sr_idle@nil]

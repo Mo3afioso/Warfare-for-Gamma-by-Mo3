@@ -1,0 +1,230 @@
+[smart_terrain]
+squad_id = 26
+max_population = 2
+respawn_params = respawn
+respawn_idle = 86400
+
+[respawn]
+;-- Type: spawn_mutants_zombies
+;-- markers have been added to the end of lines, for easier targeting,adjusting and editing across the affected files.
+;-- you can change the spawns by simply adding/removing the commas
+
+;--===================================================
+;---------------<< squad spawns >>-------------------
+;--===================================================
+
+;--< Groups by power >--|
+;spawn_all_weak ;--off
+;spawn_all_normal ;--off
+;spawn_all_hard ;--off
+;spawn_all_worst ;--off
+
+;--< Groups by type >--|
+spawn_mutants_zombies ;--on
+;spawn_mutants_normal ;--off
+;spawn_mutants_rare ;--off
+;spawn_mutants_big ;--off
+;spawn_mutants_psy ;--off
+
+;--< Individuals >--|
+;--Zombies
+;spawn_zombie_stalker ;--off
+;spawn_zombie ;--off
+;--Normal Mutants
+;spawn_tushkano ;--off
+;spawn_mix_dogs ;--off
+;spawn_dog ;--off
+;spawn_cat ;--off
+;spawn_flesh_boar ;--off
+;--Rare Mutants
+;spawn_bloodsucker ;--off
+;spawn_psysucker ;--off
+;spawn_snork ;--off
+;spawn_lurker ;--off
+;spawn_fracture ;--off
+;--Big Mutants
+;spawn_chimera ;--off
+;spawn_gigant ;--off
+;--Psy Mutants
+;spawn_psy_dog ;--off
+;spawn_poltergeist_tele ;--off
+;spawn_poltergeist_flame ;--off
+;spawn_poltergeist_black ;--off
+;spawn_karlik ;--off
+;spawn_burer ;--off
+;spawn_controller ;--off
+;spawn_controller_hard ;--off
+
+;--< Dynamic spawns >--|
+;spawn_all_weak_c_1_1 ;--off
+;spawn_all_normal_c_1_2 ;--off
+;spawn_all_hard_c_2_1 ;--off
+;spawn_all_worst_c_2_2 ;--off
+;spawn_mutants_psy_c_3_1 ;--off
+;spawn_mutants_psy_c_3_2 ;--off
+
+
+;--===================================================
+;---------------<< squad details >>-------------------
+;--===================================================
+
+;-----< groups by power >-----|
+;[spawn_all_weak]	;-- Zombies/Normal mutants - Rates of groups:(3 zombies + 1 tushkano + 3 dogs + 2 cats + 3 fleshes/boars)
+;spawn_squads = zombied_sim_squad_mix, simulation_zombie, simulation_mix_zombie, simulation_tushkano, simulation_dog, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar ;--spawn-all-weak
+;spawn_num = 1
+
+;[spawn_all_normal]	;-- Zombies/Normal/Rare mutants - Rates of groups: [10:5](3 zombies + 3 dogs + 1 cats + 3 fleshes/boars   +   1 + 1 + 1 + 1 + 1)
+;spawn_squads = zombied_sim_squad_mix, simulation_zombie_3_6, simulation_mix_zombie, simulation_mix_dogs, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar, simulation_fracture, simulation_lurker, simulation_snork, simulation_bloodsucker, simulation_psysucker ;--spawn-all-normal
+;spawn_num = 1
+
+;[spawn_all_hard]	;-- Rare/Big/Psy mutants (except gigant) - Rates of groups: [10:6] (2 + 2 + 2 + 2 + 1   +   1 + 1 + 1 + 1 + 1)
+;spawn_squads = simulation_fracture, simulation_fracture, simulation_lurker, simulation_lurker_1_2, simulation_snork_2_3, simulation_snork_2_3, simulation_bloodsucker, simulation_bloodsucker_1_2, simulation_psysucker, simulation_chimera, simulation_psy_dog, simulation_poltergeist_tele, simulation_karlik, simulation_burer, simulation_controller ;--spawn-all-hard
+;spawn_num = 1
+
+;[spawn_all_worst]	;-- Big/Psy mutants
+;spawn_squads = simulation_chimera, simulation_gigant, simulation_psy_dog_squad, simulation_poltergeist, simulation_karlik, simulation_burer, simulation_contr_5zomb_weak ;--spawn-all-worst
+;spawn_num = 1
+
+
+;-----< specific group/species >-----|
+[spawn_mutants_zombies]
+spawn_squads = zombied_sim_squad_mix, simulation_zombie, simulation_mix_zombie ;--spawn-mutants-zombies
+spawn_num = 1
+
+;[spawn_mutants_normal]		;--(1 tushkano + 4 dogs + 1 cats + 3 fleshes/boars)
+;spawn_squads = simulation_tushkano, simulation_dog, simulation_mix_dogs, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar ;--spawn-mutants-normal
+;spawn_num = 1
+
+;[spawn_mutants_rare]
+;spawn_squads = simulation_fracture, simulation_lurker, simulation_snork, simulation_bloodsucker, simulation_psysucker ;--spawn-mutants-rare
+;spawn_num = 1
+
+;[spawn_mutants_big]
+;spawn_squads = simulation_chimera, simulation_gigant ;--spawn-mutants-big
+;spawn_num = 1
+
+;[spawn_mutants_psy]
+;spawn_squads = simulation_psy_dog, simulation_poltergeist_tele, simulation_karlik, simulation_burer, simulation_controller ;--spawn-mutants-psy
+;spawn_num = 1
+
+;-----< specific mutants >-----|
+;[spawn_zombie_stalker]
+;spawn_squads = zombied_sim_squad_mix ;--spawn-zombie-1
+;spawn_num = 1
+
+;[spawn_zombie]
+;spawn_squads = simulation_zombie, simulation_zombie_3_6 ;--spawn-zombie-2
+;spawn_num = 1
+
+;[spawn_tushkano]
+;spawn_squads = simulation_tushkano ;--spawn-tushkano
+;spawn_num = 1
+
+;[spawn_mix_dogs]
+;spawn_squads = simulation_pseudodog, simulation_dog, simulation_mix_dogs ;--spawn-mix-dogs
+;spawn_num = 1
+
+;[spawn_dog]
+;spawn_squads = simulation_psy_dog, simulation_dog, simulation_mix_dogs, simulation_pseudodog ;--spawn-dog
+;spawn_num = 1
+
+;[spawn_cat]
+;spawn_squads = simulation_cat ;--spawn-cat
+;spawn_num = 1
+
+;[spawn_flesh_boar]
+;spawn_squads = simulation_mix_boar_flesh, simulation_flesh, simulation_boar ;--spawn-flesh-boar
+;spawn_num = 1
+
+;[spawn_bloodsucker]
+;spawn_squads = simulation_bloodsucker, simulation_bloodsucker_red, simulation_bloodsucker_black, simulation_bloodsucker_2weak ;--spawn-bloodsucker
+;spawn_num = 1
+
+;[spawn_psysucker]
+;spawn_squads = simulation_psysucker, simulation_psysucker_1_2 ;--spawn-psysucker
+;spawn_num = 1
+
+;[spawn_snork]
+;spawn_squads = simulation_snork, simulation_snork_2_3 ;--spawn-snork
+;spawn_num = 1
+
+;[spawn_lurker]
+;spawn_squads = simulation_lurker, simulation_lurker_1_2 ;--spawn-lurker
+;spawn_num = 1
+
+;[spawn_fracture]
+;spawn_squads = simulation_fracture ;--spawn-fracture
+;spawn_num = 1
+
+;[spawn_chimera]
+;spawn_squads = simulation_chimera ;--spawn-chimera
+;spawn_num = 1
+
+;[spawn_gigant]
+;spawn_squads = simulation_gigant ;--spawn-gigant
+;spawn_num = 1
+
+;[spawn_psy_dog]
+;spawn_squads = simulation_psy_dog, simulation_psy_dog, simulation_psy_dog_squad ;--spawn-psy-dog
+;spawn_num = 1
+
+;[spawn_poltergeist_tele]
+;spawn_squads = simulation_poltergeist_tele ;--spawn-poltergeist-tele
+;spawn_num = 1
+
+;[spawn_poltergeist_flame]
+;spawn_squads = simulation_poltergeist_tele ;--spawn-poltergeist-flame
+;spawn_num = 1
+
+;[spawn_poltergeist_black]
+;spawn_squads = simulation_poltergeist_tele ;--spawn-poltergeist-black
+;spawn_num = 1
+
+;[spawn_karlik]
+;spawn_squads = simulation_karlik ;--spawn-karlik
+;spawn_num = 1
+
+;[spawn_burer]
+;spawn_squads = simulation_burer ;--spawn-burer
+;spawn_num = 1
+
+;[spawn_controller]
+;spawn_squads = simulation_controller ;--spawn-controller
+;spawn_num = 1
+
+;[spawn_controller_hard]
+;spawn_squads = simulation_contr_2sn_4zomb, simulation_contr_6gzomb, simulation_contr_5zomb_weak ;--spawn-controller-hard
+;spawn_num = 1
+
+
+
+;-----< conditional spawns >-----|
+
+;-- c_1 (weak mutants first, normal mutants after 1 week)
+;[spawn_all_weak_c_1_1]
+;spawn_squads = zombied_sim_squad_mix, simulation_zombie, simulation_mix_zombie, simulation_tushkano, simulation_dog, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar ;--spawn-all-weak
+;spawn_num = {!actor_week_in_zone(1)} 1, {=actor_week_in_zone(1)} 0
+
+;[spawn_all_normal_c_1_2]
+;spawn_squads = zombied_sim_squad_mix, simulation_zombie_3_6, simulation_mix_zombie, simulation_mix_dogs, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar, simulation_fracture, simulation_lurker, simulation_snork, simulation_bloodsucker, simulation_psysucker ;--spawn-all-normal
+;spawn_num = {=actor_week_in_zone(1)} 1, {!actor_week_in_zone(1)} 0
+
+
+;-- c_2 (hard mutants first, worst mutants after 2 weeks)
+;[spawn_all_hard_c_2_1]
+;spawn_squads = simulation_fracture, simulation_fracture, simulation_lurker, simulation_lurker_1_2, simulation_snork_2_3, simulation_snork_2_3, simulation_bloodsucker, simulation_bloodsucker_1_2, simulation_psysucker, simulation_chimera, simulation_psy_dog, simulation_poltergeist_tele, simulation_karlik, simulation_burer, simulation_controller ;--spawn-all-hard
+;spawn_num = {!actor_week_in_zone(2)} 1, {=actor_week_in_zone(2)} 0
+
+;[spawn_all_worst_c_2_2]
+;spawn_squads = simulation_chimera, simulation_gigant, simulation_psy_dog_squad, simulation_poltergeist, simulation_karlik, simulation_burer, simulation_contr_5zomb_weak ;--spawn-all-worst
+;spawn_num = {=actor_week_in_zone(2)} 1, {!actor_week_in_zone(2)} 0
+
+
+;-- c_3 (psy mutants spawn become worse after 2 weeks)
+;[spawn_mutants_psy_c_3_1]
+;spawn_squads = simulation_psy_dog, simulation_poltergeist_tele, simulation_karlik, simulation_burer, simulation_controller ;--spawn-mutants-psy-c-3-1
+;spawn_num = {!actor_week_in_zone(2)} 1, {=actor_week_in_zone(2)} 0
+
+;[spawn_mutants_psy_c_3_2]
+;spawn_squads = simulation_psy_dog_squad, simulation_poltergeist, simulation_karlik, simulation_burer_1_2_day, simulation_contr_5zomb_weak ;--spawn-mutants-psy-c-3-2
+;spawn_num = {=actor_week_in_zone(2)} 1, {!actor_week_in_zone(2)} 0

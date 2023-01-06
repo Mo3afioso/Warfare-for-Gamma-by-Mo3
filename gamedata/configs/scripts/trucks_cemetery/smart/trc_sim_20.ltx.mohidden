@@ -1,0 +1,21 @@
+[smart_terrain]
+squad_id = 20
+max_population = 8
+respawn_params = respawn@trc_sim_20
+respawn_idle = 43200respawn_radius = 200
+
+[respawn@trc_sim_20]
+spawn_bandit
+spawn_renegade
+
+[spawn_bandit]
+spawn_squads = bandit_sim_squad_veteran
+spawn_num = 2
+
+[spawn_renegade]
+spawn_squads = renegade_sim_squad_veteran
+spawn_squads = 2
+
+[exclusive]
+trucks_cemetery_bandit_mechanic = trucks_cemetery\trucks_cemetery_bandit_mechanic_logic.ltx
+trucks_cemetery_bandit_trader = trucks_cemetery\trucks_cemetery_bandit_trader_logic.ltx

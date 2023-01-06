@@ -1,0 +1,16 @@
+[smart_terrain]
+squad_id = 32
+max_population = 8
+respawn_params = respawn@mlr_terrain
+respawn_idle = 43200
+respawn_radius = 200
+
+[respawn@mlr_terrain]
+spawn_monolith
+
+[spawn_monolith]
+spawn_squads =  monolith_sim_squad_veteran
+spawn_num = 1
+
+[exclusive]
+lider_monolith_haron = pripyat\lider_monolith_haron_logic.ltx

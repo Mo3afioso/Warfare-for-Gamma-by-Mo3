@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = sr_idle@sound
+on_info = {=actor_on_level(l13u_warlab) +gen_greh_sabaoth_mortal_sin_generators -war_stitch_msg} sr_idle@war_stitch_message %+war_stitch_msg%
+
+[sr_idle@war_stitch_message]
+on_game_timer = 60 | sr_idle@nil %=war_stitch_message%
+
+[sr_idle@sound]
+on_info = %=play_sound(x18_sound_13)%
+on_signal = sound_end | sr_idle@nil
+
+[sr_idle@nil]

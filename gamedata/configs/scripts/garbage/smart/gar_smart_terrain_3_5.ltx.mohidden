@@ -1,0 +1,17 @@
+[smart_terrain]
+squad_id = 5
+max_population = 8
+respawn_idle = 43200
+
+faction_controlled = stalker, dolg, ecolog, csky
+faction_respawn_num = 1
+default_faction = stalker 
+
+[exclusive]
+hunter_gar_trader_logic = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_beh_trade_1 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_2 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_3 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_4 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_5 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_6 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
